@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8b2643d-1b07-42c8-b83f-529861f4742e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files\mavenhome" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.3" />
+        <option name="updateIndicesOnProjectOpen" value="false" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qjSjgcSkodOr4MZfTIOIcZwz1V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8.0_281" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/utils" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA代码\gulimall\gulimall-common\src\main\java\com\atguigu\common\utils" />
+      <recent name="D:\IDEA代码\gulimall\gulimall-common\src\main\java\com\atguigu\common" />
+      <recent name="D:\IDEA代码\gulimall\gulimall-product\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.common.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA代码\gulimall\gulimall-common\src\main\java\com\atguigu\common\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GulimallWareApplication">
+    <configuration name="GulimallProductApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.guilimall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.guilimall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.guilimall.product.GulimallProductApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallProductApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.guilimall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.guilimall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.guilimall.product.GulimallProductApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallCouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-coupon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.coupon.GulimallCouponApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallCouponAppliction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-coupon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gulimall.coupon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.coupon.GulimallCouponAppliction" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-member" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.member.GulimallMemberApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.order.GulimallOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallProductApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.product.GulimallProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.guilimall.product.GulimallProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-ware" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.ware.GulimallWareApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenrenApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="renren-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.renren.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="renren-fast" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RenrenApplication (1)" />
+        <item itemvalue="Spring Boot.GulimallCouponAppliction" />
+        <item itemvalue="JUnit.GulimallProductApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.GulimallProductApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8b2643d-1b07-42c8-b83f-529861f4742e" name="Default Changelist" comment="" />
+      <created>1617591643090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617591643090</updated>
+      <workItem from="1617591647395" duration="4519000" />
+      <workItem from="1617636890475" duration="1991000" />
+      <workItem from="1617671931561" duration="8091000" />
+      <workItem from="1617966227438" duration="15052000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617676713061">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1617676713061" />
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.0.center" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.0.left" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.0.right" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.1.bottom" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.1.center" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.1.left" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state width="1237" height="207" key="GridCell.Tab.1.right" timestamp="1617981477895">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1617981477895" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1617678364834">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1617678364834" />
+    <state x="32" y="70" key="new project wizard" timestamp="1617674446037">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="32" y="70" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1617674446037" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1617975746519">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1617975746519" />
+  </component>
+</project>
