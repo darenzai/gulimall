@@ -2,32 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b2643d-1b07-42c8-b83f-529861f4742e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gulimall-gateway/src/main/java/com/atguigu/gulimall/gateway/gulimallgateway/config/GulimallCorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/atguigu/gulimall/thirdparty/GulimallThirdPartyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/atguigu/gulimall/thirdparty/controller/OssController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/test/java/com/atguigu/gulimall/thirdparty/GulimallThirdPartyApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/exception/BizCodeEnume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/valid/AddGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/valid/ListValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/valid/ListValueConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/valid/UpdateGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/valid/UpdateStatusGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/resources/ValidationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/exception/GulimallExceptionControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/AttrGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/AttrGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/CategoryBrandRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/CategoryBrandRelationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/dao/CategoryBrandRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/dao/CategoryBrandRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/AttrGroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/AttrGroupEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/BrandEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/BrandEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/AttrGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/AttrGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/CategoryBrandRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/CategoryBrandRelationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/AttrGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/AttrGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/CategoryBrandRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/CategoryBrandRelationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/RenrenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/RenrenApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/resources/mapper/product/CategoryBrandRelationDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/resources/mapper/product/CategoryBrandRelationDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/test/java/com/atguigu/guilimall/product/GulimallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/test/java/com/atguigu/guilimall/product/GulimallProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/atguigu/gulimall/thirdparty/controller/OssController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/atguigu/gulimall/thirdparty/controller/OssController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -126,59 +133,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GulimallGatewayApplication ">
-    <configuration name="GulimallProductApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gulimall-product" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.guilimall.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.guilimall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.guilimall.product.GulimallProductApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallProductApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gulimall-product" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.guilimall.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.guilimall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.guilimall.product.GulimallProductApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallCouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gulimall-coupon" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.coupon.GulimallCouponApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallCouponAppliction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gulimall-coupon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.gulimall.coupon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.coupon.GulimallCouponAppliction" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallGatewayApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+  <component name="RunManager" selected="Spring Boot.GulimallThirdPartyApplication">
+    <configuration name="GulimallGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="gulimall-gateway" />
       <extension name="coverage">
         <pattern>
@@ -187,33 +143,11 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.gateway.gulimallgateway.GulimallGatewayApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GulimallGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gulimall-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.gulimallgateway.GulimallGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gulimall-member" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.member.GulimallMemberApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gulimall-order" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.order.GulimallOrderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallProductApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GulimallProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="gulimall-product" />
       <extension name="coverage">
         <pattern>
@@ -226,56 +160,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GulimallProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gulimall-product" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.guilimall.product.GulimallProductApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GulimallThirdPartyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="GulimallThirdPartyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="gulimall-third-party" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gulimall.thirdparty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.thirdparty.GulimallThirdPartyApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gulimall-ware" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gulimall.ware.GulimallWareApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="renren-fast" />
+    <configuration name="RenrenApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="renren-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.renren.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.GulimallProductApplicationTests" />
-      <item itemvalue="JUnit.GulimallProductApplicationTests.contextLoads" />
-      <item itemvalue="Spring Boot.GulimallCouponApplication" />
-      <item itemvalue="Spring Boot.GulimallGatewayApplication" />
-      <item itemvalue="Spring Boot.GulimallMemberApplication" />
-      <item itemvalue="Spring Boot.GulimallOrderApplication" />
-      <item itemvalue="Spring Boot.GulimallProductApplication" />
-      <item itemvalue="Spring Boot.GulimallWareApplication" />
-      <item itemvalue="Spring Boot.RenrenApplication" />
-      <item itemvalue="Spring Boot.GulimallGatewayApplication " />
-      <item itemvalue="Spring Boot.GulimallCouponAppliction" />
-      <item itemvalue="Spring Boot.GulimallProductApplication (1)" />
-      <item itemvalue="Spring Boot.GulimallThirdPartyApplication" />
-    </list>
+    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="renren-fast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.renren.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GulimallGatewayApplication " />
-        <item itemvalue="Spring Boot.GulimallProductApplication (1)" />
-        <item itemvalue="Spring Boot.GulimallCouponAppliction" />
-        <item itemvalue="JUnit.GulimallProductApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.GulimallProductApplicationTests" />
+        <item itemvalue="Spring Boot.GulimallProductApplication" />
+        <item itemvalue="Spring Boot.GulimallThirdPartyApplication" />
+        <item itemvalue="Spring Boot.RenrenApplication" />
+        <item itemvalue="Spring Boot.RenrenApplication (1)" />
+        <item itemvalue="Spring Boot.GulimallGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -292,22 +222,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -342,6 +257,11 @@
       <workItem from="1618198473869" duration="10380000" />
       <workItem from="1618272654348" duration="4566000" />
       <workItem from="1618312241263" duration="12069000" />
+      <workItem from="1618450983248" duration="36000" />
+      <workItem from="1618451856341" duration="13820000" />
+      <workItem from="1618535844791" duration="160000" />
+      <workItem from="1618536073261" duration="4329000" />
+      <workItem from="1618563759424" duration="10393000" />
     </task>
     <servers />
   </component>
@@ -360,14 +280,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1618117692177" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618536004718">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1618536004718" />
     <state x="397" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618057188709">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="397" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1618057188709" />
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1618213032781">
+    <state x="487" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1618572936811">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1618213032781" />
+    <state x="487" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1618572936811" />
     <state x="175" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618208998616">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -376,38 +300,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1617676713061" />
-    <state width="845" height="220" key="GridCell.Tab.0.bottom" timestamp="1618328520882">
+    <state width="845" height="267" key="GridCell.Tab.0.bottom" timestamp="1618577421952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618328520882" />
-    <state width="845" height="220" key="GridCell.Tab.0.center" timestamp="1618328520882">
+    <state width="845" height="267" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618577421952" />
+    <state width="845" height="267" key="GridCell.Tab.0.center" timestamp="1618577421951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618328520882" />
-    <state width="845" height="220" key="GridCell.Tab.0.left" timestamp="1618328520882">
+    <state width="845" height="267" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618577421951" />
+    <state width="845" height="267" key="GridCell.Tab.0.left" timestamp="1618577421951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618328520882" />
-    <state width="845" height="220" key="GridCell.Tab.0.right" timestamp="1618328520882">
+    <state width="845" height="267" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618577421951" />
+    <state width="845" height="267" key="GridCell.Tab.0.right" timestamp="1618577421951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618328520882" />
-    <state width="845" height="220" key="GridCell.Tab.1.bottom" timestamp="1618328520883">
+    <state width="845" height="267" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618577421951" />
+    <state width="845" height="267" key="GridCell.Tab.1.bottom" timestamp="1618577421952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618328520883" />
-    <state width="845" height="220" key="GridCell.Tab.1.center" timestamp="1618328520882">
+    <state width="845" height="267" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618577421952" />
+    <state width="845" height="267" key="GridCell.Tab.1.center" timestamp="1618577421952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1618328520882" />
-    <state width="845" height="220" key="GridCell.Tab.1.left" timestamp="1618328520882">
+    <state width="845" height="267" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1618577421952" />
+    <state width="845" height="267" key="GridCell.Tab.1.left" timestamp="1618577421952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1618328520882" />
-    <state width="845" height="220" key="GridCell.Tab.1.right" timestamp="1618328520883">
+    <state width="845" height="267" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1618577421952" />
+    <state width="845" height="267" key="GridCell.Tab.1.right" timestamp="1618577421952">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="220" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1618328520883" />
+    <state width="845" height="267" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1618577421952" />
     <state width="820" height="218" key="GridCell.Tab.2.bottom" timestamp="1618117641709">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -432,9 +356,17 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="32" y="70" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1618314030822" />
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1618541364089">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1618541364089" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1617975746519">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1617975746519" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1618489541041">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1618489541041" />
   </component>
 </project>

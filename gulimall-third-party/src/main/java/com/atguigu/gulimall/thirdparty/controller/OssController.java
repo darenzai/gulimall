@@ -36,7 +36,7 @@ public class OssController {
         String accessKey ;
 
         @RequestMapping("/oss/policy")
-        public Map<String, String> policy(){
+        public R policy(){
 
             String host = "https://" + bucket + "." + endpoint; // host的格式为 bucketname.endpoint
 
@@ -74,7 +74,7 @@ public class OssController {
             } finally {
                 ossClient.shutdown();
             }
-            return respMap;
+            return R.ok().put("data",respMap);
         }
     }
 
