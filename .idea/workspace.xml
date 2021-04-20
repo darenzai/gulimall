@@ -2,50 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b2643d-1b07-42c8-b83f-529861f4742e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/to/MemberPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/to/SkuReductionTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/to/SpuBoundTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/SkuImagesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/SkuInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/SkuSaleAttrValueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/SpuInfoDescController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/dao/SkuImagesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/dao/SkuInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/dao/SkuSaleAttrValueDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/dao/SpuInfoDescDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/SkuImagesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/SkuInfoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/SkuSaleAttrValueEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/entity/SpuInfoDescEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/feign/CouponFeignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SkuImagesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SkuInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SkuSaleAttrValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SpuInfoDescService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SkuImagesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SkuSaleAttrValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SpuInfoDescServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/atguigu/common/utils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-common/target/classes/com/atguigu/common/utils/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-common/target/classes/com/atguigu/common/utils/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/controller/SkuFullReductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/controller/SkuFullReductionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/service/SkuFullReductionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/service/SkuFullReductionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/service/impl/SkuFullReductionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/service/impl/SkuFullReductionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/GulimallProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/GulimallProductApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/AttrGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/AttrGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/CategoryBrandRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/CategoryBrandRelationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/SpuInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/SpuInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/AttrGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/AttrGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/CategoryBrandRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/CategoryBrandRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/config/WareMyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/feign/ProductFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/vo/MergeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/vo/PurchaseDoneVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/vo/PurchaseItemDoneVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/AttrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/controller/AttrController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/ProductAttrValueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/ProductAttrValueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SpuImagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SpuImagesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SpuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/SpuInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/AttrGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/AttrGroupServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/CategoryBrandRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/CategoryBrandRelationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/ProductAttrValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/ProductAttrValueServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SpuImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SpuImagesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SpuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/atguigu/gulimall/product/service/impl/SpuInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/GulimallWareApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/GulimallWareApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/controller/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/controller/PurchaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/controller/PurchaseDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/controller/PurchaseDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/dao/WareSkuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/dao/WareSkuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/PurchaseDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/PurchaseDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/PurchaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/WareSkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/WareSkuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/PurchaseDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/PurchaseDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/PurchaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/PurchaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/WareInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/WareInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/WareSkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/java/com/atguigu/gulimall/ware/service/impl/WareSkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/main/resources/mapper/ware/WareSkuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/main/resources/mapper/ware/WareSkuDao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +129,7 @@
     <configuration default="true" type="CompoundRunConfigurationType">
       <toRun name="GulimallCouponAppliction" type="SpringBootApplicationConfigurationType" />
       <toRun name="GulimallGatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="RenrenApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="GulimallProductApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="GulimallThirdPartyApplication" type="SpringBootApplicationConfigurationType" />
@@ -161,6 +139,7 @@
     <configuration name="gulimall" type="CompoundRunConfigurationType">
       <toRun name="GulimallCouponAppliction" type="SpringBootApplicationConfigurationType" />
       <toRun name="GulimallGatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="RenrenApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="GulimallProductApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="GulimallThirdPartyApplication" type="SpringBootApplicationConfigurationType" />
@@ -257,11 +236,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="gulimall-ware" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.gulimall.ware.*" />
+          <option name="PATTERN" value="com.atguigu.gulimall.ware.vo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -298,11 +277,6 @@
       <item itemvalue="Spring Boot.RenrenApplication" />
       <item itemvalue="Spring Boot.GulimallWareApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.GulimallWareApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -313,11 +287,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -369,7 +338,8 @@
       <workItem from="1618658219701" duration="6642000" />
       <workItem from="1618704371027" duration="12189000" />
       <workItem from="1618738944578" duration="8241000" />
-      <workItem from="1618812237928" duration="12374000" />
+      <workItem from="1618812237928" duration="16472000" />
+      <workItem from="1618879573218" duration="8136000" />
     </task>
     <servers />
   </component>
@@ -388,18 +358,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1618117692177" />
-    <state x="96" y="0" width="1159" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618818702595">
+    <state x="96" y="0" width="1159" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618829699249">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" width="1159" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1618818702595" />
+    <state x="96" y="0" width="1159" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1618829699249" />
     <state x="397" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618057188709">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="397" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1618057188709" />
-    <state x="487" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1618817177312">
+    <state x="487" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1618885712570">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="487" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1618817177312" />
+    <state x="487" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1618885712570" />
     <state x="404" y="199" width="498" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618645563694">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -412,38 +382,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1618817046145" />
-    <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1618823958933">
+    <state width="876" height="163" key="GridCell.Tab.0.bottom" timestamp="1618888549643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618823958933" />
-    <state width="845" height="163" key="GridCell.Tab.0.center" timestamp="1618823958932">
+    <state width="876" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618888549643" />
+    <state width="876" height="163" key="GridCell.Tab.0.center" timestamp="1618888549643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618823958932" />
-    <state width="845" height="163" key="GridCell.Tab.0.left" timestamp="1618823958932">
+    <state width="876" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618888549643" />
+    <state width="876" height="163" key="GridCell.Tab.0.left" timestamp="1618888549642">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618823958932" />
-    <state width="845" height="163" key="GridCell.Tab.0.right" timestamp="1618823958933">
+    <state width="876" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618888549642" />
+    <state width="876" height="163" key="GridCell.Tab.0.right" timestamp="1618888549643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618823958933" />
-    <state width="845" height="163" key="GridCell.Tab.1.bottom" timestamp="1618823958934">
+    <state width="876" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618888549643" />
+    <state width="876" height="163" key="GridCell.Tab.1.bottom" timestamp="1618888549644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618823958934" />
-    <state width="845" height="163" key="GridCell.Tab.1.center" timestamp="1618823958933">
+    <state width="876" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618888549644" />
+    <state width="876" height="163" key="GridCell.Tab.1.center" timestamp="1618888549643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1618823958933" />
-    <state width="845" height="163" key="GridCell.Tab.1.left" timestamp="1618823958933">
+    <state width="876" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1618888549643" />
+    <state width="876" height="163" key="GridCell.Tab.1.left" timestamp="1618888549643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1618823958933" />
-    <state width="845" height="163" key="GridCell.Tab.1.right" timestamp="1618823958933">
+    <state width="876" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1618888549643" />
+    <state width="876" height="163" key="GridCell.Tab.1.right" timestamp="1618888549644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1618823958933" />
+    <state width="876" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1618888549644" />
     <state width="845" height="172" key="GridCell.Tab.2.bottom" timestamp="1618715973758">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -476,9 +446,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1617975746519" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1618820913332">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1618831683381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1618820913332" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1618831683381" />
   </component>
 </project>
