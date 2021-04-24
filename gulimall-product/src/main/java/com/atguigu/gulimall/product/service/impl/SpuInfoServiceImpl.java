@@ -1,6 +1,7 @@
 package com.atguigu.gulimall.product.service.impl;
 
 import com.alibaba.druid.util.StringUtils;
+import com.alibaba.fastjson.TypeReference;
 import com.atguigu.common.constant.ProductConstant;
 import com.atguigu.common.to.SkuReductionTo;
 import com.atguigu.common.to.SpuBoundTo;
@@ -65,7 +66,6 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
     CategoryService categoryService;
     @Autowired
     WareFeignService wareFeignService;
-
     @Autowired
     SearchFeignService searchFeignService;
     @Override
@@ -260,94 +260,194 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
     @Override
     public void up(Long spuId) {
 
-        //1、查出当前spuId对应的所有sku信息,品牌的名字
-        List<SkuInfoEntity> skus=skuInfoService.getSkuBySpuId(spuId);
+        // 1 组装数据 查出当前spuId对应的所有sku信息
+        List<SkuInfoEntity> skus = skuInfoService.getSkuBySpuId(spuId);
+        // 查询这些sku是否有库存
+        List<Long> skuids = skus.stream().map(sku -> sku.getSkuId()).collect(Collectors.toList());
+        // 2 封装每个sku的信息
 
-
-
-        //TODO 4 查询当前Sku所有可以被检索的规格属性
+        // 3.查询当前sku所有可以被用来检索的规格属性
+        // 获取所有的spu商品的id 然后查询这些id中那些是可以被检索的 [数据库中目前 4、5、6、11不可检索]
         List<ProductAttrValueEntity> baseAttrs = attrValueService.baseAttrlistforspu(spuId);
-        List<Long> attrIds=baseAttrs.stream().map(attr->{
-            return attr.getAttrId();
+
+        List<Long> attrIds = baseAttrs.stream().map(attr -> attr.getAttrId()).collect(Collectors.toList());
+        // 可检索的id集合
+        Set<Long> isSet = new HashSet<>(attrService.selectSearchAttrIds(attrIds));
+
+        // 根据商品id 过滤不可检索的商品 最后映射号检索属性
+        List<SkuEsModel.Attr> attrs = baseAttrs.stream().filter(item -> isSet.contains(item.getAttrId())).map(item -> {
+            SkuEsModel.Attr attr = new SkuEsModel.Attr();
+            BeanUtils.copyProperties(item, attr);
+            return attr;
         }).collect(Collectors.toList());
 
-        List<Long> searchAttrIds=attrService.selectSearchAttrIds(attrIds);
-        //转换成set集合
-        Set<Long> idSet=new HashSet<>(searchAttrIds);
+        // skuId 对应 是否有库存
+        Map<Long, Boolean> stockMap = null;
+        try {
+            // 3.1 发送远程调用 库存系统查询是否有库存
+            R hasStock = wareFeignService.getSkuHasStock(skuids);
 
-        List<SkuEsModel.Attr> attrsList =baseAttrs.stream().filter(item->{
-            return idSet.contains(item.getAttrId());
-        }).map(item->{
-            SkuEsModel.Attr attrs = new SkuEsModel.Attr();
-            BeanUtils.copyProperties(item,attrs);
-            return  attrs;
-        }).collect(Collectors.toList());
+            // 构造器受保护 所以写成内部类对象
+            stockMap = hasStock.getData(new TypeReference<List<SkuHasStockVo>>(){}).stream().collect(Collectors.toMap(SkuHasStockVo::getSkuId, item -> item.getHasStock()));
 
-        List<Long> skuIdList = skus.stream()
-                .map(SkuInfoEntity::getSkuId)
-                .collect(Collectors.toList());
-
-        // 3.1 发送远程调用 库存系统查询是否有库存
-        //TODO 1,发送远程调用库存系统，  查询库存系统是否有库存
-        Map<Long, Boolean> stockMap=null;
-        try{
-
-
-
-
-            R<List<SkuHasStockVo>> skuHasStock = wareFeignService.getSkuHasStock(skuIdList);
-             stockMap = skuHasStock.getData().stream().collect(Collectors.toMap(SkuHasStockVo::getSkuId, item -> item.getHasStock()));
-        }catch(Exception e){
-            log.error("库存服务查询异常：原因{}",e);
+            log.warn("服务调用成功" + hasStock);
+        } catch (Exception e) {
+            log.error("库存服务调用失败: 原因{}",e);
         }
 
-
-
-        //2，封装每个sku信息
         Map<Long, Boolean> finalStockMap = stockMap;
-        List<SkuEsModel> uoProducts=skus.stream().map(sku->{
-            //组装需要的信息
-            SkuEsModel esModel=new SkuEsModel();
-            BeanUtils.copyProperties(sku,esModel);
+        List<SkuEsModel> collect = skus.stream().map(sku -> {
+            SkuEsModel esModel = new SkuEsModel();
+            BeanUtils.copyProperties(sku, esModel);
             esModel.setSkuPrice(sku.getPrice());
             esModel.setSkuImg(sku.getSkuDefaultImg());
-            //设置库存信息
-            if(finalStockMap ==null){
+            // 4 设置库存
+            if(finalStockMap == null){
                 esModel.setHasStock(true);
             }else {
                 esModel.setHasStock(finalStockMap.get(sku.getSkuId()));
-
             }
-            //TODO 2，热度评分
+            // TODO 1.热度评分 0
             esModel.setHotScore(0L);
-            //TODO 3，查询品牌和名字分类信息
-            BrandEntity brand = brandService.getById(esModel.getBrandId());
-            esModel.setBrandName(brand.getName());
-            esModel.setBrandImg(brand.getLogo());
-            esModel.setBrandId(brand.getBrandId());
 
-            //分类
-            CategoryEntity category = categoryService.getById(esModel.getCatalogId());
-            esModel.setBrandId(category.getCatId());
-            esModel.setCatalogName(category.getName());
+            BrandEntity brandEntity = brandService.getById(esModel.getBrandId());
 
-            //设置检索属性
-            esModel.setAttrs(attrsList);
-            BeanUtils.copyProperties(sku,esModel);
+            // brandName、brandImg
+            esModel.setBrandName(brandEntity.getName());
+            esModel.setBrandImg(brandEntity.getLogo());
+
+            // 查询分类信息
+            CategoryEntity categoryEntity = categoryService.getById(esModel.getCatalogId());
+            esModel.setCatalogName(categoryEntity.getName());
+
+            // 保存商品的属性
+            esModel.setAttrs(attrs);
             return esModel;
         }).collect(Collectors.toList());
 
-        //TODO 5、将数据发给es进行保存：gulimall-search
-        R r = searchFeignService.productStatusUp(uoProducts);
+        // 5.发给ES进行保存  mall-search
+        R r = searchFeignService.productStatusUp(collect);
 
-        if (r.getCode() == 0) {
-            //远程调用成功
-            //TODO 6、修改当前spu的状态
-            this.baseMapper.updaSpuStatus(spuId, ProductConstant.ProductStatusEnum.SPU_UP.getCode());
-        } else {
-            //远程调用失败
-            //TODO 7、重复调用？接口幂等性:重试机制
+        if(r.getCode() == 0){
+            // 远程调用成功
+            System.out.println("低矮哦用成功");
+            baseMapper.updaSpuStatus(spuId, ProductConstant.ProductStatusEnum.SPU_UP.getCode());
+            //baseMapper.updateSpuStatus(spuId, ProductConstant.StatusEnum.SPU_UP.getCode());
+        }else{
+            System.out.println("调用失败");
+            // 远程调用失败 TODO 接口幂等性 重试机制
+            /**
+             * Feign 的调用流程  Feign有自动重试机制
+             * 1. 发送请求执行
+             * 2.
+             */
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        //1、查出当前spuId对应的所有sku信息,品牌的名字
+//        List<SkuInfoEntity> skus=skuInfoService.getSkuBySpuId(spuId);
+//
+//
+//
+//        //TODO 4 查询当前Sku所有可以被检索的规格属性
+//        List<ProductAttrValueEntity> baseAttrs = attrValueService.baseAttrlistforspu(spuId);
+//        List<Long> attrIds=baseAttrs.stream().map(attr->{
+//            return attr.getAttrId();
+//        }).collect(Collectors.toList());
+//
+//        List<Long> searchAttrIds=attrService.selectSearchAttrIds(attrIds);
+//        //转换成set集合
+//        Set<Long> idSet=new HashSet<>(searchAttrIds);
+//
+//        List<SkuEsModel.Attr> attrsList =baseAttrs.stream().filter(item->{
+//            return idSet.contains(item.getAttrId());
+//        }).map(item->{
+//            SkuEsModel.Attr attrs = new SkuEsModel.Attr();
+//            BeanUtils.copyProperties(item,attrs);
+//            return  attrs;
+//        }).collect(Collectors.toList());
+//
+//        List<Long> skuIdList = skus.stream()
+//                .map(SkuInfoEntity::getSkuId)
+//                .collect(Collectors.toList());
+//
+//        // 3.1 发送远程调用 库存系统查询是否有库存
+//        //TODO 1,发送远程调用库存系统，  查询库存系统是否有库存
+//        Map<Long, Boolean> stockMap=null;
+//        try{
+//
+//
+//
+//
+//            R<List<SkuHasStockVo>> skuHasStock = wareFeignService.getSkuHasStock(skuIdList);
+//             stockMap = skuHasStock.getData().stream().collect(Collectors.toMap(SkuHasStockVo::getSkuId, item -> item.getHasStock()));
+//        }catch(Exception e){
+//            log.error("库存服务查询异常：原因{}",e);
+//        }
+//
+//
+//
+//        //2，封装每个sku信息
+//        Map<Long, Boolean> finalStockMap = stockMap;
+//        List<SkuEsModel> uoProducts=skus.stream().map(sku->{
+//            //组装需要的信息
+//            SkuEsModel esModel=new SkuEsModel();
+//            BeanUtils.copyProperties(sku,esModel);
+//            esModel.setSkuPrice(sku.getPrice());
+//            esModel.setSkuImg(sku.getSkuDefaultImg());
+//            //设置库存信息
+//            if(finalStockMap ==null){
+//                esModel.setHasStock(true);
+//            }else {
+//                esModel.setHasStock(finalStockMap.get(sku.getSkuId()));
+//
+//            }
+//            //TODO 2，热度评分
+//            esModel.setHotScore(0L);
+//            //TODO 3，查询品牌和名字分类信息
+//            BrandEntity brand = brandService.getById(esModel.getBrandId());
+//            esModel.setBrandName(brand.getName());
+//            esModel.setBrandImg(brand.getLogo());
+//            esModel.setBrandId(brand.getBrandId());
+//
+//            //分类
+//            CategoryEntity category = categoryService.getById(esModel.getCatalogId());
+//            esModel.setBrandId(category.getCatId());
+//            esModel.setCatalogName(category.getName());
+//
+//            //设置检索属性
+//            esModel.setAttrs(attrsList);
+//            BeanUtils.copyProperties(sku,esModel);
+//            return esModel;
+//        }).collect(Collectors.toList());
+//
+//        //TODO 5、将数据发给es进行保存：gulimall-search
+//        R r = searchFeignService.productStatusUp(uoProducts);
+//
+//        if (r.getCode() == 0) {
+//            //远程调用成功
+//            //TODO 6、修改当前spu的状态
+//            this.baseMapper.updaSpuStatus(spuId, ProductConstant.ProductStatusEnum.SPU_UP.getCode());
+//        } else {
+//            //远程调用失败
+//            //TODO 7、重复调用？接口幂等性:重试机制
+//        }
 
     }
 

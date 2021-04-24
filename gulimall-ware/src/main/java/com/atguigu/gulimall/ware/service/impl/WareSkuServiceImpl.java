@@ -90,14 +90,25 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
     @Override
     public List<SkuHasStockVo> getSkuHasStock(List<Long> skuIds) {
 
-        List<SkuHasStockVo> skuHasStockVos = skuIds.stream().map(item -> {
-            Long count = this.baseMapper.getSkuStock(item);
-            SkuHasStockVo skuHasStockVo = new SkuHasStockVo();
-            skuHasStockVo.setSkuId(item);
-            skuHasStockVo.setHasStock(count == null?false:count > 0);
-            return skuHasStockVo;
+        return skuIds.stream().map(id -> {
+            SkuHasStockVo stockVo = new SkuHasStockVo();
+
+            // 查询当前sku的总库存量
+            stockVo.setSkuId(id);
+            // 这里库存可能为null 要避免空指针异常
+            stockVo.setHasStock(baseMapper.getSkuStock(id)==null?false:true);
+            return stockVo;
         }).collect(Collectors.toList());
-        return skuHasStockVos;
+
+
+//        List<SkuHasStockVo> skuHasStockVos = skuIds.stream().map(item -> {
+//            Long count = this.baseMapper.getSkuStock(item);
+//            SkuHasStockVo skuHasStockVo = new SkuHasStockVo();
+//            skuHasStockVo.setSkuId(item);
+//            skuHasStockVo.setHasStock(count == null?false:count > 0);
+//            return skuHasStockVo;
+//        }).collect(Collectors.toList());
+//        return skuHasStockVos;
     }
 
 }

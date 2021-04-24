@@ -23,30 +23,22 @@ public class ElasticSaveController {
     @Autowired
     private ProductSaveService productSaveService;
 
-
     /**
      * 上架商品
-     *
-     * @param skuEsModels
-     * @return
      */
     @PostMapping(value = "/product")
-    public R productStatusUp(@RequestBody List<SkuEsModel> skuEsModels) {
+    public R productStatusUp(@RequestBody List<SkuEsModel> skuEsModels){
 
-        boolean status = false;
+        boolean status;
         try {
             status = productSaveService.productStatusUp(skuEsModels);
         } catch (IOException e) {
-            //log.error("商品上架错误{}",e);
-
+            log.error("ElasticSaveController商品上架错误: {}", e);
             return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(), BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
         }
-
-        if (status) {
-            return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(), BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
-        } else {
+        if(!status){
             return R.ok();
         }
-
+        return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(), BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
     }
 }

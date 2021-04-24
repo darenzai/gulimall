@@ -3,11 +3,12 @@ package com.atguigu.common.to.es;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 @Data
-public class SkuEsModel { //common中
+public class SkuEsModel  implements Serializable { //common中
     private Long skuId;
     private Long spuId;
     private String skuTitle;

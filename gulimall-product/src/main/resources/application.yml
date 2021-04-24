@@ -13,6 +13,7 @@ spring:
       secret-key: vRuZtlfrRynaxsy7VuexDMGoSUh7yd
       oss:
         endpoint: oss-cn-beijing.aliyuncs.com
+
   application:
     name: gulimall-product
   jackson:
