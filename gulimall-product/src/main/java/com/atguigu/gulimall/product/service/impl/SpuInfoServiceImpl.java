@@ -257,6 +257,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
      * 商品上架
      * @param spuId
      */
+    //@Transactional
     @Override
     public void up(Long spuId) {
 

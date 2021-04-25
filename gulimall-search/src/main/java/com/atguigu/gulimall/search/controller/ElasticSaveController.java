@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Slf4j
-@RequestMapping(value = "/search/save")
+@RequestMapping("/search/save")
 @RestController
 public class ElasticSaveController {
 
@@ -26,7 +26,7 @@ public class ElasticSaveController {
     /**
      * 上架商品
      */
-    @PostMapping(value = "/product")
+    @PostMapping("/product")
     public R productStatusUp(@RequestBody List<SkuEsModel> skuEsModels){
 
         boolean status;

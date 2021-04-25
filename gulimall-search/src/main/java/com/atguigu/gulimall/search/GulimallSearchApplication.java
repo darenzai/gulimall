@@ -10,9 +10,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@EnableDiscoveryClient
 @EnableTransactionManagement
-@EnableFeignClients
+@EnableDiscoveryClient
 public class GulimallSearchApplication {
 
     public static void main(String[] args) {

@@ -32,7 +32,10 @@ spring:
             - Path=/api/member/**
           filters:
             - RewritePath=/api/(?<segment>.*),/$\{segment}
-
+        - id: gulimall_serach_host
+          uri: lb://gulimall-search
+          predicates:
+            - Host=search.gulimall.com
         - id: ware_route
           uri: lb://gulimall-ware
           predicates:
