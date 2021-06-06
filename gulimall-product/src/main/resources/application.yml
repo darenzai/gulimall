@@ -8,6 +8,8 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+      config:
+        timeout: 300000
     alicloud:
       access-key: LTAI4G2QiAFRr173TQ863u5k
       secret-key: vRuZtlfrRynaxsy7VuexDMGoSUh7yd
@@ -18,6 +20,12 @@ spring:
     name: gulimall-product
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
+  thymeleaf:
+    cache: false
+  redis:
+    host: 192.168.2.101
+    port: 6379
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
@@ -30,3 +38,6 @@ server:
 logging:
   level:
     com.atguigu.gulimall: debug
+feign:
+  httpclient:
+    connection-timeout: 300000

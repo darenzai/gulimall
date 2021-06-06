@@ -1,7 +1,10 @@
 package com.atguigu.common.valid;
 
-import javafx.scene.effect.SepiaTone;
-import org.hibernate.validator.constraints.Currency;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+import java.util.HashSet;
+import java.util.Set;
+
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

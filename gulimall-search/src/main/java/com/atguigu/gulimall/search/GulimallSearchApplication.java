@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@EnableTransactionManagement
 @EnableDiscoveryClient
 public class GulimallSearchApplication {
 

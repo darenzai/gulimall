@@ -1,9 +1,13 @@
 package com.atguigu.gulimall.ware.controller;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import com.atguigu.common.exception.BizCodeEnume;
+import com.atguigu.common.to.es.SkuEsModel;
+import com.atguigu.gulimall.ware.service.ProductSaveService;
 import com.atguigu.gulimall.ware.vo.SkuHasStockVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +31,10 @@ import com.atguigu.common.utils.R;
 public class WareSkuController {
     @Autowired
     private WareSkuService wareSkuService;
+
+
+    @Autowired
+    private ProductSaveService productSaveService;
     //c查询Sku是否有库存
     // sku的规格参数相同，因此我们要将查询规格参数提前，只查询一次
     /**
@@ -40,7 +48,23 @@ public class WareSkuController {
         return R.ok().setData(vos);
     }
 
+    @PostMapping("/product")
+    public R productStatusUp(@RequestBody List<SkuEsModel> skuEsModels){
+        boolean status=false;
+        try {
+            status = productSaveService.productStatusUp(skuEsModels);
+        } catch (IOException e) {
+            //log.error("商品上架错误{}",e);
 
+            return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(),BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
+        }
+
+        if(status){
+            return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(),BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
+        }else {
+            return R.ok();
+        }
+    }
 
 
     /**

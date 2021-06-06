@@ -8,19 +8,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gulimall-coupon" />
-        <module name="gulimall-order" />
-        <module name="gulimall-third-party" />
+        <module name="search" />
+        <module name="gulimall-ware" />
+        <module name="renren-generator" />
         <module name="gulimall-search" />
         <module name="gulimall-gateway" />
-        <module name="gulimall-common" />
+        <module name="gulimall-third-party" />
         <module name="gulimall-product" />
+        <module name="gulimall-order" />
+        <module name="gulimall-searchh" />
         <module name="renren-fast" />
-        <module name="renren-generator" />
         <module name="gulimall-member" />
-        <module name="gulimall-ware" />
+        <module name="gulimall-common" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="mall-search" target="1.8" />
+      <module name="search" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -30,10 +35,13 @@
       <module name="gulimall-order" options="-parameters" />
       <module name="gulimall-product" options="-parameters" />
       <module name="gulimall-search" options="-parameters" />
+      <module name="gulimall-searchh" options="-parameters" />
       <module name="gulimall-third-party" options="-parameters" />
       <module name="gulimall-ware" options="-parameters" />
+      <module name="mall-search" options="-parameters" />
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
+      <module name="search" options="-parameters" />
     </option>
   </component>
 </project>

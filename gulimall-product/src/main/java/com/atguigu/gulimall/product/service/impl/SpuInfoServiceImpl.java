@@ -10,13 +10,12 @@ import com.atguigu.common.to.es.SkuHasStockVo;
 import com.atguigu.common.utils.R;
 import com.atguigu.gulimall.product.entity.*;
 import com.atguigu.gulimall.product.feign.CouponFeignService;
-import com.atguigu.gulimall.product.feign.SearchFeignService;
+//import com.atguigu.gulimall.product.feign.SearchFeignService;
 import com.atguigu.gulimall.product.feign.WareFeignService;
 import com.atguigu.gulimall.product.service.*;
 import com.atguigu.gulimall.product.vo.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -31,6 +30,8 @@ import com.atguigu.common.utils.Query;
 
 import com.atguigu.gulimall.product.dao.SpuInfoDao;
 import org.springframework.transaction.annotation.Transactional;
+
+import javax.annotation.Resource;
 
 
 @Service("spuInfoService")
@@ -66,8 +67,8 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
     CategoryService categoryService;
     @Autowired
     WareFeignService wareFeignService;
-    @Autowired
-    SearchFeignService searchFeignService;
+    //@Autowired
+    //SearchFeignService searchFeignService;
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
         IPage<SpuInfoEntity> page = this.page(
@@ -192,8 +193,8 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
                 skuReductionTo.setSkuId(skuId);
                 if(skuReductionTo.getFullCount() >0 || skuReductionTo.getFullPrice().compareTo(new BigDecimal("0")) == 1){
                     R r1 = couponFeignService.saveSkuReduction(skuReductionTo);
-                   if(r1.getCode() != 0){
-                      log.error("远程保存sku优惠信息失败");
+                    if(r1.getCode() != 0){
+                        log.error("远程保存sku优惠信息失败");
                     }
                 }
 
@@ -287,10 +288,8 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         try {
             // 3.1 发送远程调用 库存系统查询是否有库存
             R hasStock = wareFeignService.getSkuHasStock(skuids);
-
             // 构造器受保护 所以写成内部类对象
             stockMap = hasStock.getData(new TypeReference<List<SkuHasStockVo>>(){}).stream().collect(Collectors.toMap(SkuHasStockVo::getSkuId, item -> item.getHasStock()));
-
             log.warn("服务调用成功" + hasStock);
         } catch (Exception e) {
             log.error("库存服务调用失败: 原因{}",e);
@@ -327,15 +326,19 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         }).collect(Collectors.toList());
 
         // 5.发给ES进行保存  mall-search
-        R r = searchFeignService.productStatusUp(collect);
+        R r=null;
+        try{
+            r=wareFeignService.productStatusUp(collect);
+             //r= searchFeignService.productStatusUp(collect);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
 
         if(r.getCode() == 0){
             // 远程调用成功
-            System.out.println("低矮哦用成功");
             baseMapper.updaSpuStatus(spuId, ProductConstant.ProductStatusEnum.SPU_UP.getCode());
-            //baseMapper.updateSpuStatus(spuId, ProductConstant.StatusEnum.SPU_UP.getCode());
         }else{
-            System.out.println("调用失败");
             // 远程调用失败 TODO 接口幂等性 重试机制
             /**
              * Feign 的调用流程  Feign有自动重试机制
@@ -343,20 +346,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
              * 2.
              */
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 
@@ -450,6 +440,5 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
 //            //TODO 7、重复调用？接口幂等性:重试机制
 //        }
 
-    }
-
 }
+
